@@ -1,5 +1,5 @@
 import "./ExpenseDate.css";
-function ExpenseDate(props) {
+const ExpenseDate = (props) => {
   //sada smo props iz Expense item poslali ovdje
   //ovo je objekt {date2: neko vrime} zato nam treba točka
   const month = props.date2.toLocaleString("en-US", { month: "long" });
@@ -12,6 +12,6 @@ function ExpenseDate(props) {
       <div className="expense-date__day">{year}</div>
     </div>
   );
-}
+};
 
 export default ExpenseDate;
